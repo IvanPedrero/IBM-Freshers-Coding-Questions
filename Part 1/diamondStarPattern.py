@@ -12,6 +12,7 @@ r = 5
 
 """
 
+
 def diamondStarPatternInverted(r):
 
     # Maximum width of the diamond.
@@ -31,8 +32,8 @@ def diamondStarPatternInverted(r):
         r += 1
 
     for i in range(r):
-        
-        #Define the line.
+
+        # Define the line.
         line = (leftSpace * " ") + (starPerRow * "* ")
 
         # Crescent stars.
@@ -52,16 +53,10 @@ def diamondStarPatternInverted(r):
         print(line)
 
 
-
-
 # Driver code.
 if __name__ == "__main__":
-    
+
     r = int(input("Enter the number of rows : "))
 
-    if r != None :
+    if r != None:
         diamondStarPatternInverted(r)
-
-
-        
-            
